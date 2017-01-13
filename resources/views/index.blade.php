@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>To Do App</title>
+		<!-- Bootstrap CSS -->
+		<link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="{{ URL::asset('css/custom.css') }}" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	    <div class="container">
+		    <div class="table-responsive">
+			  <table class="table">
+			    <thead>
+				    <th>Task Description</th>
+				    <th>Modify</th>
+				    <th>Delete</th>
+			    </thead>
+			    <tbody class="task_lists">
+			    	
+			    </tbody>
+			    
+			    <tr>
+			    	<form>
+	 					<div class="form-group">
+					    <td><input type="text" class="form-control" id="task_name" placeholder="Add Task"></td>
+					    </div>
+					    <td colspan="2"><a class="btn btn-success" id="add_task_button" href="#" role="button">Add</a></td>				   
+				    </form>
+			    </tr>
+			  </table>
+			  <div class="network-alert row col-xs-12"></div>
+			</div>
+	    </div>
+
+
+
+
+		<!-- Placing JS in footer, so that it is processed only when page is fully loaded. -->
+		<script src="{{ URL::asset('js/jquery.min.js') }}"></script>
+		<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+		<script src="{{ URL::asset('js/custom.js') }}"></script>
+	</body>
+</html>
