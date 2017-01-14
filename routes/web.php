@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('api/all', ['uses' => 'ApiController@all']);
+
+Route::post('api/add',['uses' => 'ApiController@add']);
