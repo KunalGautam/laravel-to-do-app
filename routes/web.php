@@ -20,3 +20,5 @@ Route::get('api/all', ['uses' => 'ApiController@all']);
 Route::post('api/add',['uses' => 'ApiController@add']);
 
 Route::delete('api/remove/{id}', ['uses' => 'ApiController@remove']);
+
+Route::put('api/update',['uses' => 'ApiController@update']);

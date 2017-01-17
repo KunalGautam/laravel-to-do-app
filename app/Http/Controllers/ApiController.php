@@ -28,4 +28,11 @@ class ApiController extends Controller
         return response("", 204);
     }
 
+    public function update(Request $request){
+       
+       $data = $request->all();
+       DB::table('notes')->where('id', $data['id'])->update(['text' => $data['text']]);
+       return response("", 204);
+    }
+        
 }
