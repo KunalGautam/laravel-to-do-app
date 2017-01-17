@@ -23,4 +23,9 @@ class ApiController extends Controller
     	return response($jsonReturnVal, 201);
     }
 
+    public function remove($id){
+        DB::table('notes')->where('id', $id)->delete();
+        return response("", 204);
+    }
+
 }
